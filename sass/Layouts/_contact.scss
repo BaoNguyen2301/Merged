@@ -1,0 +1,15 @@
+.contact{
+    background: url('../img/3.jpg') no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    h3{
+        @include stytext3($color-white-0,$fs-4);
+        letter-spacing: 4px;
+    }
+    a{
+        @include stytext3($color-white-0,$fs-0);
+        padding: 0.7em 2em;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+}

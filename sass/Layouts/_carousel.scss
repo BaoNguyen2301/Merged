@@ -1,0 +1,58 @@
+.mergedCarousel{
+    background: url('../img/b1.jpg') no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    position: relative;
+    #merged__carousel{
+        background-color: $color-black-2;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    opacity: 0;
+                    height: 700px;
+                }
+                .carousel__caption{
+                    position: absolute;
+                    width: 1080px;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 14em 0 0;
+                    text-align: center;
+                    h5{
+                        @include stytext1($color-white-0,2.91em,$fw-1);
+                        line-height: 1.4em;
+                        letter-spacing: .2em;
+                    }
+                    p{
+                        @include stytext3($color-white-0,$fs-0 - 1);
+                        line-height: 28px;
+                        margin: $mg-1 auto $mg-2;
+                        width: 86%;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-indicators{
+        margin: 0;
+        height: 14px;
+        position: absolute;
+        bottom: 22%;
+        button{
+           margin: 0 $mg-0 - 2 0 0;
+           width: 14px;
+           height: 14px;
+           border: 3px solid white;
+           border-radius: 50%;
+           background-color: $color-white-0;
+           opacity: 1;
+           box-sizing: inherit;
+           &.active{
+            background-color: $color-purple-0;
+            border: 3px solid $color-purple-0;
+           }
+        }
+    }
+}

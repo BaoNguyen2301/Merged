@@ -1,0 +1,32 @@
+@mixin reponsiveMobile ($screen){
+    @if map-has-key($map:$breakpoints,$key:$screen){
+        $value: map-get($map: $breakpoints, $key:$screen );
+        @media screen and(min-width:$screen) {
+            @content;
+        }
+    }
+    @else{
+        @warn "{$screen} isn't exits in breakpoint";
+    }
+}
+
+@mixin stytext1 ($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin stytext2 ($color,$fw){
+    color: $color;
+    font-weight: $fw;
+}
+
+@mixin stytext3 ($color,$fs){
+    color: $color;
+    font-size: $fs;
+}
+
+@mixin stytext4 ($fs,$fw){
+    font-size: $fs;
+    font-weight: $fw;
+}

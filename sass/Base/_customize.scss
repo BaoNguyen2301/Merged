@@ -1,0 +1,41 @@
+.section{
+    padding: 80px 0;
+}
+.section-info{
+    margin-bottom: 5em;
+    h3{
+        @include stytext3($color-black-3,2.9em);
+        text-shadow: 0 1px 2px $color-black-2;
+        text-align: center;
+    }
+    p{
+        @include stytext3 ($color-black-4,$fs-0 - 1);
+        margin: $mg-1 auto;
+        width: 60%;
+        line-height: 1.8em;
+        letter-spacing: 1px;
+    }
+}
+
+.section-info-light{
+    margin-bottom: 5em;
+    h3{
+        @include stytext3($color-white-0,2.9em);
+        text-shadow: 0 1px 2px $color-black-2;
+        text-align: center;
+    }
+    p{
+        @include stytext3 ($color-white-0,$fs-0 - 1);
+        margin: $mg-1 auto;
+        width: 60%;
+        line-height: 1.8em;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+

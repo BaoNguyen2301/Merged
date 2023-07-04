@@ -1,0 +1,28 @@
+.proffesional{
+    text-align: center;
+    .section-info{
+        width: 65%;
+        margin: 0 auto;
+        p{
+            margin-top: 1em;
+            margin-bottom: 5em;
+            width: 100%;
+        }
+    }
+    .proffesional__number{
+        p {
+            @include stytext1($color-orange-0, 3.5em, $fw-3);
+            letter-spacing: 2px;
+            margin: 0;
+            margin-bottom: 0.2em;
+        }
+        h4{
+            @include stytext1($color-black-3,$fs-5 - 2,$fw-2);
+            letter-spacing: 2px;
+        }
+        h6{
+            @include stytext2($color-gray-1,$fs-6);
+            margin-top: 0.8em;
+        }
+    }
+}

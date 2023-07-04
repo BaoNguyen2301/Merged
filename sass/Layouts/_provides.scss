@@ -1,0 +1,23 @@
+.provides{
+    text-align: center;
+    .provides__line{
+        background-color: $color-white-2;
+        height: 1px;
+        width: 75%;
+        margin: 0 auto 3em;
+    }
+    .provides__content{
+        i{
+            @include stytext3($color-orange-0,$fs-4);
+        }
+        h4{
+            @include stytext1($color-black-5,$fs-5,$fw-2);
+            letter-spacing: 0.075em;
+            margin: $mg-1 0;
+        }
+        p{
+            @include stytext1($color-gray-1,$fs-6,$fw-1);
+            line-height: 1.8em;
+        }
+    }
+}

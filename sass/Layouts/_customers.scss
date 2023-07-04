@@ -1,0 +1,16 @@
+.customers{
+    .customers__feedback{
+        .customers__item{
+            text-align: center;
+            padding: $pd-6 $pd-0;
+            margin-right: $mg-0 - 5;
+            img{
+                width: 110px;
+                margin: 0 auto;
+                background: $color-purple-0;
+                padding: $pd-2 + 1;
+                border-radius: 50%;
+            }
+        }
+    }
+}

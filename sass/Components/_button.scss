@@ -1,0 +1,37 @@
+.button--white{
+    border: 2px solid $color-white-1;
+    color: white;
+    background: none;
+    transition: all .5s;
+    padding: $pd-4 $pd-5;
+    &:hover{
+        border: 2px solid $color-purple-0;
+        background: $color-purple-0;
+        color: $color-white-1;
+    }
+}
+
+.button--purple{
+    border: 2px solid $color-purple-0;
+    background: $color-purple-0;
+    color: $color-white-0;
+    transition: all .5s;
+    padding: $pd-4 $pd-5;
+    &:hover{
+        border: 2px solid $color-white-1;
+        background: none;
+    }
+}
+
+.button--purple--orange{
+    border: 2px solid $color-purple-0;
+    background: $color-purple-0;
+    color: $color-white-0;
+    transition: all .5s;
+    padding: $pd-4 $pd-5;
+    &:hover{
+        background: $color-orange-0;
+        border: 2px solid $color-orange-0;
+        color: $color-white-0;
+    }
+}
