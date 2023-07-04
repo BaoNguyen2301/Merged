@@ -1,0 +1,18 @@
+footer{
+    background: $color-black-6;
+    color: $color-white-0;
+    .footer__form{
+        padding-right: 5em;
+        h4{
+            @include stytext3 ($color-orange-0,1.7em);
+            margin-bottom: 1.5em;
+            letter-spacing: 2px;
+        }
+        p{
+            @include stytext3 ($color-gray-2,1em);
+            line-height: 2em;
+            margin-bottom: 2em;
+            letter-spacing: 1px;
+        }
+    }
+}

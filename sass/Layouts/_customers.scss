@@ -1,4 +1,22 @@
 .customers{
+    .owl-theme{
+        .owl-dots{
+            .owl-dot{
+                &.active{
+                    span{
+                        opacity: 1;
+                    }
+                }
+                span{
+                    width: 12px;
+                    height: 12px;
+                    margin: $mg-3 $mg-3 + 2;
+                    background: $color-orange-0;
+                    opacity: 0.5;
+                }
+            }
+        } 
+    } 
     .customers__feedback{
         .customers__item{
             text-align: center;
@@ -12,5 +30,6 @@
                 border-radius: 50%;
             }
         }
+       
     }
 }
