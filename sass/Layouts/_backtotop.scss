@@ -1,0 +1,16 @@
+.backtotop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    a{
+        i{
+            @include stytext3($color-orange-0,1.2rem);
+            width: 30px;
+            height: 30px;
+            border: 2px solid $color-orange-0;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 50%;
+        }
+    }
+}

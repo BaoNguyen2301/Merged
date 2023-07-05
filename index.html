@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="merged__navbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                <a class="nav-link nav-home active" aria-current="page" href="#">HOME</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">ABOUT</a>
@@ -101,7 +101,7 @@
                         Eleifend.</p>
                     <div class="merged__button">
                         <button class="button--white">About Us</button>
-                        <button class="button--purple">Read More</button>
+                        <button class="button--purple" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
                     </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@
                         Libero Id, Tempor Cursus Lectus. Vestibulum Eu Ligula Et Pharetra Efficitur. Maecenas
                         Eleifend.</p>
                     <div class="merged__button">
-                        <button class="button--purple">Read More</button>
+                        <button class="button--purple" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
                         <button class="button--white">About Us</button>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         Eleifend.</p>
                     <div class="merged__button">
                         <button class="button--white">About Us</button>
-                        <button class="button--purple">Read More</button>
+                        <button class="button--purple" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
                     </div>
                 </div>
               </div>
@@ -143,7 +143,7 @@
                 </p>
             </div>
             <div class="provides__line"></div>
-            <div class="provides__content row">
+            <div class="provides__content row row-cols-1 row-cols-sm-3">
                 <div class="col">
                     <i class="fa fa-th-large"></i>
                     <h4>Advanced Business</h4>
@@ -168,11 +168,11 @@
     <!-- CONTACT -->
     <section class="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-9">
+            <div class="row text-center">
+                <div class="col-12 col-md-9">
                     <h3>We Make the Best Business Solutions</h3>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-3">
                     <a class="button--purple--orange" href="#">Contact Us</a>
                 </div>
             </div>
@@ -181,12 +181,12 @@
     <!-- PROFFESIONAL -->
     <section class="proffesional section">
         <div class="container">
-            <div class="section-info">
+            <div class="section-info-pro">
                 <h3>We are always ahead Proffesional solutions for your business.</h3>
                 <p>Our results will fascinate you with the results we have
                 </p>
             </div>
-            <div class="proffesional__number row">
+            <div class="proffesional__number row row-cols-1 row-cols-sm-3">
                 <div class="col">
                     <p class="counter">1,546</p>
                     <h4>Satisfied Clients</h4>
@@ -329,7 +329,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 footer__form">
-                        <h4>Subscribe Newsletter</h4>
+                        <h4 class="footer__cap">Subscribe Newsletter</h4>
                         <p>By subscribing to our mailing list you will always get latest news from us.</p>
                         <form action="#">
                             <input type="email" name="Email" placeholder="Enter your email..." required>
@@ -339,7 +339,7 @@
                         </form>
                     </div>
                     <div class="col-2 footer__ourlink">
-                        <h4>Our Links</h4>
+                        <h4 class="footer__cap">Our Links</h4>
                         <ul class="links">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -348,7 +348,7 @@
                         </ul>
                     </div>
                     <div class="col-4 footer__contactus">
-                        <h4>Contact Us</h4>
+                        <h4 class="footer__cap">Contact Us</h4>
                         <ul class="footer__contact">
                             <li>
                                 <i class="fa fa-map-marker-alt"></i>
@@ -374,7 +374,30 @@
             </p>
         </div>
     </footer>
-
+    <!-- BACK TO TOP  -->
+    <section class="backtotop">
+        <a href="#" class="cd-top text-replace js-cd-top">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+    </section>
+    <!-- MODAL  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Merged</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/about.jpg" alt="about">
+                    <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio
+                        eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
+                        Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices
+                        hendrerit massa. Nam id metus id tellus ultrices ullamcorper.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- -------------------------------------------------------- -->
@@ -385,6 +408,10 @@
     
     <!-- OWL CAROUSEL JS -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- BACK TO TOP  -->
+    <script src="./js/main-backtotop.js"></script>
+    <script src="./js/util.js"></script>
 
     <!-- COUNT UP JS -->
     <script src="./js/jquery.waypoints.min.js"></script>

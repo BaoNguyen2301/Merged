@@ -1,18 +1,98 @@
 footer{
     background: $color-black-6;
     color: $color-white-0;
-    .footer__form{
-        padding-right: 5em;
-        h4{
-            @include stytext3 ($color-orange-0,1.7em);
+    .footer__cap{
+        @include stytext3 ($color-orange-0,1.7em);
             margin-bottom: 1.5em;
             letter-spacing: 2px;
-        }
+    }
+    .footer__form{
+        padding-right: 5em;
         p{
             @include stytext3 ($color-gray-2,1em);
             line-height: 2em;
             margin-bottom: 2em;
             letter-spacing: 1px;
+        }
+        form{
+            border: 1px solid $color-white-0;
+            width: 100%;
+            display: flex;
+            input{
+                outline: none;
+                padding: $pd-1;
+                @include stytext3($color-white-0,$fs-0 - 2);
+                width: 88%;
+                border: none;
+                background: $color-black-7;
+                letter-spacing: 2px;
+            }
+            button{
+                color: $color-white-0;
+                border: none;
+                padding: $pd-1 0;
+                text-align: center;
+                background-color: $color-purple-0;
+                transition: all .5s;
+                width: 12%;
+                cursor: pointer;
+                a{
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    .footer__ourlink{
+        .links{
+            list-style: none;
+            padding-left: 0;
+            li{
+                margin-bottom: $mg-4;
+                a{
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    .footer__contactus{
+        .footer__contact{
+            padding: 0;
+            li{
+                list-style: none;
+                @include stytext3($color-gray-2,1em);
+                letter-spacing: 1px;
+                margin-bottom: $mg-0 + 2;
+                i{
+                    margin-right: $mg-0 - 2;
+                    color: $color-orange-0;
+                }
+                span{
+                    display: block;
+                    margin-left: 2em;
+                }
+                a{
+                    color: $color-gray-2;
+                }
+            }
+        }
+    }
+    .footer__copyright{
+        p{
+            color: $color-white-0;
+            line-height: 1.8em;
+            letter-spacing: 2px;
+            text-align: center;
+            background-color: $color-black-8;
+            padding: $pd-1 + 1 0;
+            margin:0;
+            a{
+                color: $color-white-0;
+                text-decoration: underline;
+                transition: all .5s;
+                &:hover{
+                    color: $color-orange-0;
+                }
+            }
         }
     }
 }

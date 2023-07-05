@@ -13,3 +13,29 @@
         display: inline-block;
     }
 }
+@media screen and (max-width:1080px) {
+    .contact{
+        h3{
+            font-size: $fs-2 + 6;
+            letter-spacing: 3px;
+        }
+    }
+}
+@media screen and (max-width:991.98px) {
+    .contact{
+        h3{
+            font-size: $fs-2;
+            letter-spacing: 1px;
+        }
+        .button--purple--orange{
+            padding: 0.7em 1.3em;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .contact{
+        .button--purple--orange{
+            margin-top: 1.5em;
+        }
+    }
+}

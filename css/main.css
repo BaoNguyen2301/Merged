@@ -16,14 +16,14 @@ a {
 .section {
   padding: 80px 0; }
 
-.section-info {
+.section-info, .section-info-pro {
   margin-bottom: 5em; }
-  .section-info h3 {
+  .section-info h3, .section-info-pro h3 {
     color: #2c363e;
     font-size: 2.9em;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
     text-align: center; }
-  .section-info p {
+  .section-info p, .section-info-pro p {
     color: #5e5e5e;
     font-size: 15px;
     margin: 20px auto;
@@ -49,22 +49,151 @@ a {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1140px; } }
+@media screen and (max-width: 1080px) {
+  .section-info h3 {
+    font-size: 2.5em; }
+
+  .section-info-light h3 {
+    font-size: 2.5em; } }
+@media screen and (max-width: 991.98px) {
+  .section-info h3 {
+    font-size: 2.3em;
+    letter-spacing: .1em; }
+
+  .section-info-light h3 {
+    font-size: 2.3em;
+    letter-spacing: .1em; } }
+@media screen and (max-width: 768px) {
+  .section-info h3 {
+    font-size: 1.6em;
+    letter-spacing: .1em; }
+
+  .section-info-light h3 {
+    font-size: 1.6em;
+    letter-spacing: .1em; }
+
+  .section-info-pro h3 {
+    font-size: 2.7em; }
+  .section-info-pro p {
+    margin: 1em 0 3em;
+    width: auto; } }
+@media screen and (max-width: 576px) {
+  .section-info-pro h3 {
+    font-size: 2.5em; }
+  .section-info-pro p {
+    font-size: 14px; } }
+#exampleModal .modal-title {
+  color: #7f67f8;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 0; }
+#exampleModal .btn-close {
+  background-size: 12px; }
+  #exampleModal .btn-close:focus {
+    box-shadow: none; }
+#exampleModal .modal-body img {
+  width: 100%; }
+#exampleModal .modal-body p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 1em;
+  letter-spacing: 1px; }
+
+.backtotop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+  .backtotop a i {
+    color: #f97c69;
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f97c69;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 50%; }
+
 footer {
   background: #0b0c11;
   color: white; }
+  footer .footer__cap {
+    color: #f97c69;
+    font-size: 1.7em;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px; }
   footer .footer__form {
     padding-right: 5em; }
-    footer .footer__form h4 {
-      color: #f97c69;
-      font-size: 1.7em;
-      margin-bottom: 1.5em;
-      letter-spacing: 2px; }
     footer .footer__form p {
       color: #bfbfbf;
       font-size: 1em;
       line-height: 2em;
       margin-bottom: 2em;
       letter-spacing: 1px; }
+    footer .footer__form form {
+      border: 1px solid white;
+      width: 100%;
+      display: flex; }
+      footer .footer__form form input {
+        outline: none;
+        padding: 15px;
+        color: white;
+        font-size: 14px;
+        width: 88%;
+        border: none;
+        background: rgba(0, 0, 0, 0.22);
+        letter-spacing: 2px; }
+      footer .footer__form form button {
+        color: white;
+        border: none;
+        padding: 15px 0;
+        text-align: center;
+        background-color: #7f67f8;
+        transition: all .5s;
+        width: 12%;
+        cursor: pointer; }
+        footer .footer__form form button a {
+          color: white; }
+  footer .footer__ourlink .links {
+    list-style: none;
+    padding-left: 0; }
+    footer .footer__ourlink .links li {
+      margin-bottom: 10px; }
+      footer .footer__ourlink .links li a {
+        color: white; }
+  footer .footer__contactus .footer__contact {
+    padding: 0; }
+    footer .footer__contactus .footer__contact li {
+      list-style: none;
+      color: #bfbfbf;
+      font-size: 1em;
+      letter-spacing: 1px;
+      margin-bottom: 17px; }
+      footer .footer__contactus .footer__contact li i {
+        margin-right: 13px;
+        color: #f97c69; }
+      footer .footer__contactus .footer__contact li span {
+        display: block;
+        margin-left: 2em; }
+      footer .footer__contactus .footer__contact li a {
+        color: #bfbfbf; }
+  footer .footer__copyright p {
+    color: white;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #252525;
+    padding: 16px 0;
+    margin: 0; }
+    footer .footer__copyright p a {
+      color: white;
+      text-decoration: underline;
+      transition: all .5s; }
+      footer .footer__copyright p a:hover {
+        color: #f97c69; }
 
 .customers .owl-theme .owl-dots .owl-dot.active span {
   opacity: 1; }
@@ -153,6 +282,19 @@ footer {
     letter-spacing: 2px;
     display: inline-block; }
 
+@media screen and (max-width: 1080px) {
+  .contact h3 {
+    font-size: 36px;
+    letter-spacing: 3px; } }
+@media screen and (max-width: 991.98px) {
+  .contact h3 {
+    font-size: 30px;
+    letter-spacing: 1px; }
+  .contact .button--purple--orange {
+    padding: 0.7em 1.3em; } }
+@media screen and (max-width: 768px) {
+  .contact .button--purple--orange {
+    margin-top: 1.5em; } }
 .provides {
   text-align: center; }
   .provides .provides__line {
@@ -175,6 +317,12 @@ footer {
     font-weight: 400;
     line-height: 1.8em; }
 
+@media screen and (max-width: 991.98px) {
+  .provides__content h4 {
+    font-size: 20px; } }
+@media screen and (max-width: 768px) {
+  .provides__content p {
+    font-size: 14px; } }
 .mergedCarousel {
   background: url("../img/b1.jpg") no-repeat;
   background-size: cover;
@@ -224,6 +372,30 @@ footer {
         background-color: #7f67f8;
         border: 3px solid #7f67f8; }
 
+@media screen and (max-width: 1080px) {
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption h5 {
+    font-size: 2.5em; } }
+@media screen and (max-width: 991.98px) {
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption h5 {
+    font-size: 2.3em;
+    letter-spacing: .1em; }
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption p {
+    font-size: 14px;
+    width: 70%; } }
+@media screen and (max-width: 768px) {
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption h5 {
+    font-size: 1.6em;
+    letter-spacing: .1em; }
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption p {
+    font-size: 14px;
+    width: 50%; } }
+@media screen and (max-width: 576px) {
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption h5 {
+    font-size: 1em;
+    letter-spacing: .1em; }
+  .mergedCarousel #merged__carousel .carousel-inner .carousel-item .carousel__caption p {
+    font-size: 11px;
+    width: 25%; } }
 header .header__top {
   padding: 10px 0;
   background-color: #363d41;
@@ -250,6 +422,16 @@ header .header__top {
         margin: 0; }
 header .header__main {
   padding: 16px 0; }
+  header .header__main .navbar-toggler {
+    border-color: #7f67f8;
+    background-color: #7f67f8;
+    padding: 2px 6px;
+    margin-top: 5px;
+    margin-right: 0;
+    border-radius: 6px;
+    outline: none; }
+    header .header__main .navbar-toggler:focus {
+      box-shadow: none; }
   header .header__main .navbar-brand {
     color: #7f67f8;
     font-size: 35px;
@@ -273,6 +455,31 @@ header .header__main {
       color: #7f67f8; }
     header .header__main #merged__navbar .navbar-nav .nav-item .nav-link:hover {
       color: #7f67f8; }
+    header .header__main #merged__navbar .navbar-nav .nav-item .nav-link.nav-home {
+      color: #7f67f8; }
+@media screen and (max-width: 991.98px) {
+  header .header__main .container {
+    position: relative; }
+  header .header__main #merged__navbar {
+    position: absolute;
+    width: 95%;
+    top: 62px;
+    z-index: 3;
+    background-color: black; }
+    header .header__main #merged__navbar .navbar-nav {
+      text-align: center;
+      padding: 1em 0; }
+      header .header__main #merged__navbar .navbar-nav .nav-item {
+        margin: 10px 0; }
+        header .header__main #merged__navbar .navbar-nav .nav-item .nav-link {
+          color: white; }
+    header .header__main #merged__navbar .dropdown-menu {
+      background-color: #151515; }
+      header .header__main #merged__navbar .dropdown-menu .dropdown-item {
+        color: white;
+        text-align: center; }
+        header .header__main #merged__navbar .dropdown-menu .dropdown-item:hover {
+          background-color: #e9ecef; } }
 
 .button--white {
   border: 2px solid #fdfdfd;

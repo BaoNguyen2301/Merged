@@ -21,3 +21,17 @@
         }
     }
 }
+@media screen and (max-width:991.98px) {
+    .provides__content{
+        h4{
+            font-size: $fs-5 - 2;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .provides__content{
+        p{
+            font-size: $fs-3;
+        }
+    }
+}

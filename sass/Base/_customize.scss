@@ -1,7 +1,7 @@
 .section{
     padding: 80px 0;
 }
-.section-info{
+.section-info,.section-info-pro{
     margin-bottom: 5em;
     h3{
         @include stytext3($color-black-3,2.9em);
@@ -38,4 +38,62 @@
         max-width: 1140px;
     }
 }
-
+@media screen and(max-width:1080px) {
+    .section-info{
+        h3{
+            font-size: 2.5em;
+        }
+    }
+    .section-info-light{
+        h3{
+            font-size: 2.5em;
+        }
+    }
+}
+@media screen and(max-width:991.98px) {
+    .section-info{
+        h3{
+            font-size: 2.3em;
+            letter-spacing: .1em;
+        }
+    }
+    .section-info-light{
+        h3{
+            font-size: 2.3em;
+            letter-spacing: .1em;
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    .section-info{
+        h3{
+            font-size: 1.6em;
+            letter-spacing: .1em;
+        }
+    }
+    .section-info-light{
+        h3{
+            font-size: 1.6em;
+            letter-spacing: .1em;
+        }
+    }
+    .section-info-pro{
+        h3{
+            font-size: 2.7em;
+        }
+        p{
+            margin: 1em 0 3em;
+            width: auto;
+        }
+    }
+}
+@media screen and(max-width:576px) {
+    .section-info-pro{
+        h3{
+            font-size: 2.5em;
+        }
+        p{
+            font-size: $fs-3;
+        }
+    }
+}
