@@ -15,21 +15,22 @@ $('.counter').countUp({
 // owl carousel
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots:true,
-    dotsEach:4/true,
+    loop: true,
+    margin: 10,
+    nav: false,
     autoplay: true,
-    responsive:{
-        0:{
-            items:1
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:3
+        455: {
+            items: 1
         },
-        1000:{
-            items:3
+        768: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
     }
 })

@@ -34,6 +34,7 @@ a {
 .section-info-light {
   margin-bottom: 5em; }
   .section-info-light h3 {
+    margin: 0 auto;
     color: white;
     font-size: 2.9em;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
@@ -54,23 +55,23 @@ a {
     font-size: 2.5em; }
 
   .section-info-light h3 {
-    font-size: 2.5em; } }
+    font-size: 2.9em; } }
 @media screen and (max-width: 991.98px) {
   .section-info h3 {
     font-size: 2.3em;
     letter-spacing: .1em; }
 
   .section-info-light h3 {
-    font-size: 2.3em;
-    letter-spacing: .1em; } }
+    font-size: 2.9em; } }
 @media screen and (max-width: 768px) {
   .section-info h3 {
     font-size: 1.6em;
     letter-spacing: .1em; }
 
   .section-info-light h3 {
-    font-size: 1.6em;
-    letter-spacing: .1em; }
+    font-size: 2.7em; }
+  .section-info-light p {
+    width: 100%; }
 
   .section-info-pro h3 {
     font-size: 2.7em; }
@@ -81,7 +82,10 @@ a {
   .section-info-pro h3 {
     font-size: 2.5em; }
   .section-info-pro p {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .section-info-light h3 {
+    font-size: 2.5em; } }
 #exampleModal .modal-title {
   color: #7f67f8;
   font-size: 28px;
@@ -116,10 +120,18 @@ a {
     text-align: center;
     line-height: 26px;
     border-radius: 50%; }
+  .backtotop .js-cd-top {
+    opacity: 0; }
+    .backtotop .js-cd-top.cd-top--is-visible {
+      visibility: visible;
+      opacity: 1; }
+    .backtotop .js-cd-top.cd-top--fade-out {
+      opacity: 1; }
 
 footer {
-  background: #0b0c11;
   color: white; }
+  footer .footer__main {
+    background: #0b0c11; }
   footer .footer__cap {
     color: #f97c69;
     font-size: 1.7em;
@@ -195,6 +207,11 @@ footer {
       footer .footer__copyright p a:hover {
         color: #f97c69; }
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 3em 0 2em; }
+    footer .footer__ourlink {
+      margin-top: 2em; } }
 .customers .owl-theme .owl-dots .owl-dot.active span {
   opacity: 1; }
 .customers .owl-theme .owl-dots .owl-dot span {
@@ -215,7 +232,7 @@ footer {
     border-radius: 50%; }
 
 .services {
-  background: url("../../img/3.jpg") no-repeat;
+  background: url("../img/3.jpg") no-repeat;
   background-size: cover;
   text-align: center;
   color: white; }
@@ -240,6 +257,12 @@ footer {
       letter-spacing: 1px;
       font-weight: 400;
       line-height: 1.9rem; }
+  @media screen and (max-width: 991.98px) {
+    .services .services__content .service__item h6 {
+      font-size: 1em; } }
+  @media screen and (max-width: 576px) {
+    .services .services__content .service__item p {
+      font-size: 14px; } }
 
 .proffesional {
   text-align: center; }
@@ -266,6 +289,9 @@ footer {
     color: #777;
     font-weight: 15px;
     margin-top: 0.8em; }
+  @media screen and (max-width: 768px) {
+    .proffesional .proffesional__number p {
+      font-size: 2.2em; } }
 
 .contact {
   background: url("../img/3.jpg") no-repeat;

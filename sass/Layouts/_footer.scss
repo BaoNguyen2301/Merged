@@ -1,5 +1,7 @@
 footer{
-    background: $color-black-6;
+    .footer__main{
+        background: $color-black-6;
+    }
     color: $color-white-0;
     .footer__cap{
         @include stytext3 ($color-orange-0,1.7em);
@@ -93,6 +95,14 @@ footer{
                     color: $color-orange-0;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    footer{
+        padding: 3em 0 2em;
+        .footer__ourlink{
+            margin-top: 2em;
         }
     }
 }

@@ -25,10 +25,12 @@
             margin-top: 0.8em;
         }
     }
+    @media screen and(max-width:768px) {
+        .proffesional__number{
+            p{
+                font-size: 2.2em;
+            }
+        }
+    }
 }
-@media screen and(max-width:768px) {
 
-}
-@media screen and(max-width:576px) {
-
-}

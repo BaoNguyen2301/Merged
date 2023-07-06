@@ -1,5 +1,5 @@
 .services{
-    background: url('../../img/3.jpg') no-repeat;
+    background: url('../img/3.jpg') no-repeat;
     background-size: cover;
     text-align: center;
     color: $color-white-0;
@@ -30,6 +30,24 @@
                 letter-spacing: 1px;
                 font-weight: $fw-1;
                 line-height: 1.9rem;
+            }
+        }
+    }
+    @media screen and(max-width:991.98px) {
+        .services__content{
+            .service__item{
+                h6{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:576px) {
+        .services__content{
+            .service__item{
+                p{
+                    font-size: $fs-3;
+                }
             }
         }
     }

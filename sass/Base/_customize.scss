@@ -20,6 +20,7 @@
 .section-info-light{
     margin-bottom: 5em;
     h3{
+        margin: 0 auto;
         @include stytext3($color-white-0,2.9em);
         text-shadow: 0 1px 2px $color-black-2;
         text-align: center;
@@ -46,7 +47,7 @@
     }
     .section-info-light{
         h3{
-            font-size: 2.5em;
+            font-size: 2.9em;
         }
     }
 }
@@ -59,8 +60,7 @@
     }
     .section-info-light{
         h3{
-            font-size: 2.3em;
-            letter-spacing: .1em;
+            font-size: 2.9em;
         }
     }
 }
@@ -73,8 +73,10 @@
     }
     .section-info-light{
         h3{
-            font-size: 1.6em;
-            letter-spacing: .1em;
+            font-size: 2.7em;
+        }
+        p{
+            width: 100%;
         }
     }
     .section-info-pro{
@@ -94,6 +96,11 @@
         }
         p{
             font-size: $fs-3;
+        }
+    }
+    .section-info-light{
+        h3{
+            font-size: 2.5em;
         }
     }
 }
